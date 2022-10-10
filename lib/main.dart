@@ -1,3 +1,4 @@
+import 'package:basic_flutter_widgets/screens/appbar_examples.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -11,6 +12,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return const MaterialApp(
       title: 'Basic Widgets',
+      debugShowCheckedModeBanner: false,
       home: AppBarExamples(),
     );
   }
@@ -22,7 +24,7 @@ class AppBarExamples extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(),
+      appBar: AppBar4(),
     );
   }
 }
