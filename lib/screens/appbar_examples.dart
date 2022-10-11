@@ -62,3 +62,26 @@ AppBar Function() AppBar4 = () => AppBar(
         ],
       )
     );
+
+AppBar Function() AppBar5 =() => AppBar(
+  automaticallyImplyLeading: false,
+  backgroundColor: Colors.yellow,
+  title: Row(
+    mainAxisAlignment: MainAxisAlignment.start,
+    mainAxisSize: MainAxisSize.max,
+    children: const [
+    FlutterLogo(),
+    Padding(padding: EdgeInsets.only(left: 16.0),
+    child: Text('Title with logo'),
+),]),
+);
+
+AppBar Function() AppBar6 =() => AppBar(
+  backgroundColor: Colors.transparent,
+  title: const Text('Title'),
+  actions: [
+    IconButton(onPressed: () {
+      
+    }, icon: const Icon(Icons.search))
+  ],
+);

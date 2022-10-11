@@ -10,10 +10,13 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const MaterialApp(
+    return  MaterialApp(
       title: 'Basic Widgets',
       debugShowCheckedModeBanner: false,
-      home: AppBarExamples(),
+      theme: ThemeData(
+        primaryColor: Colors.purple,
+      ),
+      home: const AppBarExamples(),
     );
   }
 }
@@ -24,7 +27,7 @@ class AppBarExamples extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar4(),
+      appBar: AppBar6(),
     );
   }
 }
